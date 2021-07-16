@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>ICOS Workouts</title>
-<link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+<link rel="shortcut icon" href="images/black.png" type="image/png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="iLand Multipurpose Landing Page Template">
 <meta name="keywords" content="iLand HTML Template, iLand Landing Page, Landing Page Template">
@@ -16,6 +16,13 @@
 <link rel="stylesheet" href="css/ionicons.min.css">
 <!-- Resource style -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/subscribe.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+  emailjs.init("user_F77r5M0krn1SYKRBHnXZp");
+  })();
+</script>
 </head>
 <body>
 <div class="wrapper">
@@ -32,8 +39,8 @@
             <li><a class="page-scroll" href="#main">Home</a></li>
             <li><a class="page-scroll" href="#classes">Products</a></li>
             <li><a class="page-scroll" href="#features">Features</a></li>
-            <li><a class="page-scroll" href="#review">Reviews</a></li>
-            <li><a class="page-scroll" href="#pricing">Pricing</a></li>
+            <!-- <li><a class="page-scroll" href="#review">Reviews</a></li>
+            <li><a class="page-scroll" href="#pricing">Pricing</a></li> -->
             <li><a class="page-scroll" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -50,11 +57,11 @@
           <div class="hero-content text-center">
             <h1 class="wow fadeInUp" data-wow-delay="0.1s">NOW GOING TO GYMS JUST GOT EASIER</h1>
             <p class="wow fadeInUp" data-wow-delay="0.2s"> An all-in-one gym management application made for gyms and health clubs of all sizes. </p>
-            <a href="#" class="btn btn-action wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Request a Demo</a> </div>
+            <a href="#subscribe" class="btn btn-action wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Get In Touch</a> </div>
         </div>
       </div>
     </div>
-    <!-- Classes Section -->
+    <!-- classes Section -->
     <div class="pitch text-center" id="classes">
       <div class="container">
         <div class="pitch-intro">
@@ -79,8 +86,8 @@
           <div class="col-md-4 wow fadeInDown" data-wow-delay="0.2s">
             <div class="pitch-icon"> <i class="ion-ios-folder-outline"></i> </div>
             <div class="pitch-content">
-              <h1>24x7 Customer Support</h1>
-              <p> We will do all the work for you. We will answer queries of people for your plans, provide payment reminders to customers and provide the support that you and your customers want need, so that you can focus on things that you love. </p>
+              <h1> Find Fitness products </h1>
+              <p> Order fitness products such as supplements, gym equipment etc. at your doorsteps with amazing discounts and offers.</p>
             </div>
           </div>
           
@@ -110,8 +117,8 @@
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.4s">
             <div class="icon"> <i class="ion-ios-pulse"></i> </div>
             <div class="feature-single">
-              <h1>24 x 7 Access Control</h1>
-              <p>Open your gym for longer with confidence, saving time and money with Icos Workouts’ advanced access control system.</p>
+              <h1> Find Fitness products </h1>
+              <p> Order fitness products such as supplements, gym equipment etc. at your doorsteps with amazing discounts and offers.</p>
             </div>
           </div>
         </div>
@@ -120,8 +127,8 @@
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.6s">
             <div class="icon"> <i class="ion-ios-americanfootball-outline"></i> </div>
             <div class="feature-single">
-              <h1>Integrated Billing</h1>
-              <p> Get paid on time without the administrative stress with Icos Workouts’ automated payment processing</p>
+              <h1>   Gym Density</h1>
+              <p> Worried about the social distancing, with our new app check the real time rush in the gym on your mobile, giving clients the ability to schedule their workout sessions without fear.</p>
             </div>
           </div>
           <div class="col-md-12 wow fadeInDown" data-wow-delay="0.7s">
@@ -150,7 +157,7 @@
         <div class="split-content">
           <h1 class="wow fadeInUp">Booking and Scheduling</h1>
            
-          <p class="wow fadeInUp"> Icos Workouts is easy to use, allowing members to book in for classes,pools, saunas, personal training sessions and more! The online booking system gives clients the ability to book in and pay online – anywhere, any time.</p>
+          <p class="wow fadeInUp"> Icos Workouts is easy to use, allowing members to book in for yoga classes, zumba classes, MMA classes,, personal training sessions and more! The online booking system gives clients the ability to book in and pay online – anywhere, any time.</p>
          
         </div>
       </div>
@@ -175,18 +182,18 @@
       </div>
       <div class="col-md-6 nopadding">
         <div class="split-content">
-          <h1 class="wow fadeInUp">Integrated Billing</h1>
-          <p class="wow fadeInUp">Whether you want to automate your billing and reduce admin costs, or you are looking for a more hands-on solution, Icos Workouts gives you flexibility and control over your payments process.
+          <h1 class="wow fadeInUp">  Gym Density</h1>
+          <p class="wow fadeInUp">Worried about the social distancing, with our new app check the real time rush in the gym on your mobile, giving clients the ability to schedule their workout sessions without fear.</p>
             <br />
             <br />
-            Your billing, your choice.</p> 
         </div>
       </div>
     </div>
      <!-- Bold call to action Section -->
     
      <!-- Client Section -->
-    <div class="review-section" id="review">
+<!------
+     <div class="review-section" id="review">
       <div class="pricing-intro">
         <h1 class="wow fadeInUp" data-wow-delay="0s">Hear What Our Clients Have Got To Say</h1>
         <br />
@@ -216,6 +223,8 @@
                 <h3>President Lexo Inc</h3>
               </div>
             </div>
+
+            
             <div class="review-single"><img class="img-circle" src="images/customer3.png" alt="Client Testimonoal" />
               <div class="review-text">
                 <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>
@@ -244,22 +253,35 @@
         </div>
       </div>
     </div>
+    --->
     <!-- Package Section -->
     
     
     <!-- Subscribe Form -->
-    <div class="cta-sub no-color">
+    <div class="cta-sub no-color" id="subscribe">
       <div class="container">
         <div class="cta-inner">
           <h1 class="wow fadeInUp" data-wow-delay="0s" style="color: black;">Digitally Transform Your Gym</h1> <br />
           <h4 class="wow fadeInUp" data-wow-delay="0.2s" style="color: white;"> As consumers become more in control over their well-being, fitness clubs must be digitally prepared to service members with a variety of options and fitness experiences. Icos Workouts acts as a digital platform to facilitate these experiences by utilizing data and integrations to make digital transformation for fitness facilities more possible. </h4>
-          <br /><div class="form wow fadeInUp" data-wow-delay="0.3s">
-            <form class="subscribe-form center-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
+          <br />
+          <div class="form wow fadeInUp" data-wow-delay="0.3s">
+          <!-- <form class="subscribe-form center-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
               <input class="mail" type="email" name="email" placeholder="Enter Email Address" autocomplete="off" id="subemail">
               <input class="submit-button" type="submit" value="Request a Demo" name="send" id="subsubmit">
             </form>
+            --> 
+
+            <input type="text" id="fromName" placeholder="Enter Your Phone Number">
+            <input type="text" id="mssg" placeholder="Enter Your Gym Location">
+            <br>
+            <br>
+            <button class="btn btn-action wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;" onclick='sendMail()'> Send Message</button>
+
+
             <!-- subscribe message -->
-            <div id="mesaj"></div>
+            <div id="mesaj">
+
+            </div>
             <!-- subscribe message --> 
           </div>
         </div>
@@ -271,17 +293,17 @@
       <div class="container">
         <div class="col-md-6 contact">
           <h1>About Icos Workouts</h1>
-          <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, <br>
-            vel illum dolore eu feugiat nulla facilisis at vero Duis autem vel eum iriure dolor in <br>
-            hendrerit in vulputate velit esse eros et accumsan.</p>
-          <p>Pellentesque eget dolor gravida, tempus purus ac, ultricies mauris. Etiam est nisl,<br>
-            molestie sed egestas bibendum, varius eu diam.</p>
+          <p>Icos Workouts is a Gym finding and Gym management application for gym owners and clients.</p>
+        
+          <p>A control panel for customer side and owner side application for customers to scan when entering the gym, track people in the gym in real-time, get membership updates and offers, search for relevant gym, view gym interior images, view each gym equpment, check gym timing and other important information</p>
+
+          <p>Owners get power to see people currently in the gym in real-time, get history of any customer, send notifications, modify gym timing, modify gym packs, add other staff members with limited accessibility</p>
         </div>
         <div class="col-md-3 contact footer-menu">
           <h1>Terms Of Use</h1>
           <ul>
-            <li><a href="/privacypolicy.html">Privacy Policy</a></li>
-            <li><a href="/termsandconditions.html">Terms Of Service</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="termsandconditions.html">Terms Of Service</a></li>
         </div>
         <div class="col-md-3 contact">
           <h1>Contact Us</h1>
@@ -303,6 +325,7 @@
 <!-- Wrapper--> 
 
 <!-- Jquery and Js Plugins --> 
+
 <script type="text/javascript" src="js/jquery-2.1.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 <script type="text/javascript" src="js/plugins.js"></script> 
