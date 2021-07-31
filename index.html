@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>ICOS Workouts</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous"/>
 <link rel="shortcut icon" href="images/black.png" type="image/png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="iLand Multipurpose Landing Page Template">
@@ -14,15 +15,20 @@
 <link rel="stylesheet" href="css/owl.carousel.css">
 <link rel="stylesheet" href="css/owl.theme.css">
 <link rel="stylesheet" href="css/ionicons.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 <!-- Resource style -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script src="js/subscribe.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script type="text/javascript">
-  (function() {
+<script type="text/javascript">(function() {
   emailjs.init("user_F77r5M0krn1SYKRBHnXZp");
   })();
 </script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
 </head>
 <body>
 <div class="wrapper">
@@ -30,7 +36,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container"> 
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
+        <div class="navbar-header page-scroll" id = "IcosWorkout">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
           <a class="navbar-brand page-scroll" href="#main" style="color: white;"><strong>ICOS WORKOUTS</strong></div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,7 +47,8 @@
             <li><a class="page-scroll" href="#features">Features</a></li>
             <!-- <li><a class="page-scroll" href="#review">Reviews</a></li>
             <li><a class="page-scroll" href="#pricing">Pricing</a></li> -->
-            <li><a class="page-scroll" href="#contact">Contact</a></li>
+            <li><a class="page-scroll" href="#contactclass">Contact</a></li>
+            <li><a href="download.html">Download</a></li>
           </ul>
         </div>
       </div>
@@ -271,8 +278,8 @@
             </form>
             --> 
 
-            <input type="text" id="fromName" placeholder="Enter Your Phone Number">
-            <input type="text" id="mssg" placeholder="Enter Your Gym Location">
+            <input type="text" id="fromName" placeholder="Enter Phone">
+            <input type="text" id="mssg" placeholder="Enter Location">
             <br>
             <br>
             <button class="btn btn-action wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;" onclick='sendMail()'> Send Message</button>
@@ -289,29 +296,75 @@
     </div>
     
     <!-- Footer Section -->
-    <div class="footer" id="contact">
+    <div class="footer" id="contactclass">
       <div class="container">
-        <div class="col-md-6 contact">
-          <h1>About Icos Workouts</h1>
-          <p>Icos Workouts is a Gym finding and Gym management application for gym owners and clients.</p>
+        <div class="col-md-5 contact">
+          <h1>About ICOS Workouts</h1>
+          <p>ICOS Workouts is a Gym finding and Gym management application for gym owners and clients.</p>
         
           <p>A control panel for customer side and owner side application for customers to scan when entering the gym, track people in the gym in real-time, get membership updates and offers, search for relevant gym, view gym interior images, view each gym equpment, check gym timing and other important information</p>
 
           <p>Owners get power to see people currently in the gym in real-time, get history of any customer, send notifications, modify gym timing, modify gym packs, add other staff members with limited accessibility</p>
         </div>
-        <div class="col-md-3 contact footer-menu">
-          <h1>Terms Of Use</h1>
+        <div class="col-md-2 contact footer-menu">
+          <h1>Legal Policies</h1>
           <ul>
             <li><a href="privacypolicy.html">Privacy Policy</a></li>
-            <li><a href="termsandconditions.html">Terms Of Service</a></li>
-        </div>
-        <div class="col-md-3 contact">
+            <li><a href="termsandconditions.html">Terms And Conditions</a></li>
+            </ul>
+       
+          </div>
+        <div class="col-md-5 contact">
           <h1>Contact Us</h1>
           <p> Contact our 24/7 customer support if you have any questions. We'll help you out. </p>
-          <a href="mailto:support@gmail.com">support@icosworkouts.com</a> </div>
+          <a href="mailto:support@gmail.com">support@icosworkouts.com</a> 
+        
+          <br>
+          <br>
+          
+          
+       <!--
+          <div class="maincl">
+            <div class="icon facebook">
+              <div class="tooltip">
+               Facebook
+              </div>
+               <span><i class="fab fa-facebook-f"></i></span> 
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="icon instagram">
+              <div class="tooltip">
+               Instagram
+              </div>
+               <span><i class="fab fa-instagram"></i></span> 
+            </div>
+           
+            <br>
+            <br>
+            <br>
+           
+          </div> 
+        -->
+        <div class="centerdiv">
+          <a href="https://www.facebook.com/ICOS-Workouts-110667691302001/?ref=pages_you_manage" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="https://instagram.com/icosworkouts?utm_medium=copy_link" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/icos-workouts-199128217/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  
   
   <!-- Scroll To Top --> 
   

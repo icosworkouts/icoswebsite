@@ -8,4 +8,6 @@ function sendMail(params) {
     .then(function(res){
         console.log("Sucess",res.status);
     })
+    swal("Successfully Recorded", "Our Team Will Contact you within 24 Hours");
+    
 }
